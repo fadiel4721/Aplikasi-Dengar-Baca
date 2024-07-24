@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.audio-controls {
+  text-align: center;
+  max-width: 800px; /* Mengatur lebar maksimum agar tidak terlalu lebar */
+  margin: 0 auto; /* Memusatkan audio controls */
+  padding: 100px; /* Memberikan ruang di sekitar konten */
+  display: flex;
+  flex-wrap: wrap; /* Mengatur wrap untuk tombol gambar */
+  justify-content: center; /* Mengatur agar gambar rapi di tengah */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 5px; /* Memberikan ruang antara tombol */
+}
+
+button img {
+  transition: transform 0.2s;
+  width: 50px; /* Lebar gambar */
+  height: 50px; /* Tinggi gambar */
+}
+
+button.playing img {
+  animation: rotate 2s linear infinite;
+  filter: brightness(0.8); /* Efek merah saat sedang diputar */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

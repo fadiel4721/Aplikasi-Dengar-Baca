@@ -1,0 +1,117 @@
+* {
+    margin : 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'poppins', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fef6e9;
+}   
+
+section {
+    /* background-image: url(/img/welcome.jpg); */
+    align-items: center;
+    text-align: center;
+    padding: 20px 30px;
+    padding-bottom: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+img {
+    width: 15rem;
+}
+
+.selamat-datang a{
+    text-decoration: none;
+    color: #364f6b;
+}
+
+#selamat {
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+#selamat:hover {
+   color: #ff3b76;
+}
+
+#m {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+.btn {
+    padding-top: 3rem;
+}
+
+.btn a {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ff3b76;
+    border: none;
+    padding: 1rem 5rem;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: 0.4s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.btn a:hover{
+    transition: 0.4s;
+    background-color: #4d729c;
+}
+
+
+span {
+    color: rgb(255, 59, 118);
+}
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+/* phone */
+@media (max-width: 550px) {
+    html {
+        font-size: 55%;
+    }
+}
+
